@@ -1,280 +1,618 @@
-React Vue Nuxt TypeScript Js, [6/8/2024 11:01 AM]
 <template>
-  <div>
-    <div class="section-padding gallery-section" id="gallery">
+  <div class="bg-[#000] mt-64">
+    <main>
       <div class="container">
-        <!-- Section Title Start -->
-        <div class="text-center">
-          <h2 class="title">Our Gallery</h2>
-          <p>Some Random Photos Lorem ipsum, dolor sit.</p>
-        </div>
-        <!-- Section Title End -->
 
-        <div id="btncontainer" class="filter">
-          <button :class="{ 'btn-active': activeFilter === 'all' }" class="btn" @click="filterGallery('all')">ALL</button>
-          <button :class="{ 'btn-active': activeFilter === 'Bollywood' }" class="btn" @click="filterGallery('Bollywood')">Bollywood</button>
-          <button :class="{ 'btn-active': activeFilter === 'Hollywood' }" class="btn" @click="filterGallery('Hollywood')">Hollywood</button>
-          <button :class="{ 'btn-active': activeFilter === 'tv' }" class="btn" @click="filterGallery('tv')">TV Shows</button>
+        <div class="flex items-center justify-between text_h3" data-aos="fade-up">
+          <div class="" data-aos="fade-right">
+            <h3 class="text-[50px] font-bold text-white">PORTFOLIO</h3>
+          </div>
+          <div id="btncontainer" class="filter">
+            <button :class="{ 'btn-active': activeFilter === 'all' }" class="btn" @click="filterGallery('all')">
+              <NuxtLink to="/portfolio">Branding</NuxtLink>
+            </button>
+            <button :class="{ 'btn-active': activeFilter === 'Bollywood' }" class="btn" @click="filterGallery('Bollywood')">
+              <NuxtLink to="/portfolio">Mobile App</NuxtLink>
+            </button>
+            <button :class="{ 'btn-active': activeFilter === 'Hollywood' }" class="btn" @click="filterGallery('Hollywood')">
+              <NuxtLink to="/portfolio">CRM</NuxtLink>
+            </button>
+            <button :class="{ 'btn-active': activeFilter === 'tv' }" class="btn" @click="filterGallery('tv')">
+              <NuxtLink to="/portfolio">Website</NuxtLink>
+
+            </button>
+          </div>
         </div>
 
-        <!-- Gallery Section Start -->
-        <div class="gallery sets">
-          <a v-for="(img, index) in filteredImages" :key="index" @click="openImage(index)">
-            <img :src="img.src" />
-          </a>
+        <div id="gallery" class="photos-grid-container gallery"   data-aos="fade-up">
+          <div class="main-photo img-box">
+            <NuxtLink>
+              <div class="col-md-6 col-lg-4">
+                <div class="item animated wow fadeIn">
+                  <div class="uzb_img">
+                    <img src="https://uic.group/media/cache/0c/39/0c392b9a99ead3fb208087f2a1e1e145.jpg" class="" alt="no image/">
+                  </div>
+
+                  <div class="absolute -mt-56 top-10 right-[310px] z-50">
+                    <p class="text-white font-bold text-[35px]">Uzbekistan's Club</p>
+                    <p class="text-[#c5bebe] text-[14px]">WEBSITE</p>
+                  </div>
+
+                  <div class="overlay fade-overlay">
+                    <div class="text">VIEW MORE</div>
+                  </div>
+                </div>
+              </div>
+            </NuxtLink>
+
+          </div>
+          <div>
+            <div class="sub">
+              <div v-for="index in images" :key="index"
+
+              >
+                <div class="img-box">
+                  <NuxtLink data-aos="fade-right">
+                    <div class="col-md-6 col-lg-4">
+                      <div class="item animated wow fadeIn">
+                        <img :src="index.src" class="rounded-[12px]" alt="no image">
+                        <div class="absolute top-0 left-5 z-50">
+                          <p class="text-white font-bold text-[25px]">{{index.titleabs}}</p>
+                          <p class="text-[#c5bebe] text-[14px]">WEBSITE</p>
+                        </div>
+                        <div class="overlay fade-overlay">
+                          <div class="text2">VIEW MORE</div>
+                        </div>
+                      </div>
+                    </div>
+                  </NuxtLink>
+                </div>
+              </div>
+
+              <div id="multi-link" class="img-box">
+
+              </div>
+            </div>
+
+          </div>
+
         </div>
+
+        <div id="gallery" class="photos-grid-container gallery" data-aos="fade-up">
+          <div class="main-photo img-box">
+            <NuxtLink data-aos="fade-right">
+              <div class="col-md-6 col-lg-4">
+                <div class="item animated wow fadeIn">
+                  <div class="uzb_img">
+                    <img src="https://uic.group/media/cache/77/4d/774ddc33fda844b44bb597539531dec6.jpg" class="" alt="no image/">
+                  </div>
+
+                  <div class="absolute -mt-56 top-10 left-10 z-50">
+                    <p class="text-white font-bold text-[35px]">WAYU</p>
+                    <p class="text-[#c5bebe] text-[14px]">WEBSITE</p>
+                  </div>
+
+                  <div class="overlay fade-overlay">
+                    <div class="text">VIEW MORE</div>
+                  </div>
+                </div>
+              </div>
+            </NuxtLink>
+
+          </div>
+          <div>
+            <div class="sub">
+              <div v-for="index in serviceimg" :key="index"
+              >
+                <div class="img-box">
+                  <NuxtLink>
+                    <div class="col-md-6 col-lg-4">
+                      <div class="item animated wow fadeIn">
+                        <img :src="index.src" class="rounded-[12px]" alt="no image">
+                        <div class="absolute top-0 left-5 z-50">
+                          <p class="text-white font-bold text-[25px]">{{index.titleabs}}</p>
+                          <p class="text-[#c5bebe] text-[14px]">WEBSITE</p>
+                        </div>
+                        <div class="overlay fade-overlay">
+                          <div class="text2">VIEW MORE</div>
+                        </div>
+                      </div>
+                    </div>
+                  </NuxtLink>
+                </div>
+              </div>
+
+              <div id="multi-link" class="img-box">
+
+              </div>
+            </div>
+          </div>
+          <div class="button-group">
+
+            <NuxtLink to="/portfolio" class="button button-arrow bg-blue flex items-center gap-5 cursor-pointer">
+              All Projects
+              <svg viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                <g class="arrow-head">
+                  <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
+                </g>
+                <g class="arrow-body">
+                  <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
+                </g>
+              </svg>
+            </NuxtLink>
+
+          </div>
+        </div>
+
       </div>
-    </div>
-
-    <div v-if="isModalOpen" class="openDiv">
-      <img :src="images[currentImage].src" class="imgPreview" />
-      <div class="butonsSection">
-        <button class="prevButton" @click="prevImage">Previous</button>
-        <button class="nextButton" @click="nextImage">Next</button>
-      </div>
-      <button class="closeBtn" @click="closeModal">Close</button>
-    </div>
+    </main>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
 
-const activeFilter = ref('all');
-const currentImage = ref(0);
-const isModalOpen = ref(false);
+import {onMounted} from "vue";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 const images = ref([
-  { src: 'https://iili.io/y7W4t4.md.webp', category: 'Bollywood' },
-  { src: 'https://i.redd.it/a90376enwvg91.jpg', category: 'Bollywood' },
-  { src: 'https://iili.io/y7waOg.md.jpg', category: 'Bollywood' },
-  { src: 'https://iili.io/y7WrNf.webp', category: 'Bollywood' },
-  { src: 'https://i.redd.it/wh6hbexev2v91.jpg', category: 'Hollywood' },
-  { src: 'https://i.redd.it/4b6s83hss9p91.jpg', category: 'Hollywood' },
-  { src: 'https://i.redd.it/2s7w09k01ol91.jpg', category: 'tv' },
-  { src: 'https://i.redd.it/2s7w09k01ol91.jpg', category: 'tv' },
-]);
+      {
+        id: 1,
+        src: 'https://uic.group/media/cache/29/88/29883e26588ac429b3ca86b3ac39efa6.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Anatomica",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+      {
+        id: 2,
+        src: 'https://uic.group/media/cache/cc/39/cc392cc7e6083d974df22bdf3f7baae3.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Anatomica App",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+      {
+        id: 3,
+        src: 'https://uic.group/media/cache/59/f1/59f1ca58bab7263f9c5eaff3033d5951.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Express 24",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+      {
+        id: 4,
+        src: 'https://uic.group/media/cache/b6/27/b6273a3cbd3fe1e5ad0e9b9acdccdfc4.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Toshkent Parfum",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+    ],
+);
 
-const filteredImages = computed(() => {
-  if (activeFilter.value === 'all') return images.value;
-  return images.value.filter(img => img.category === activeFilter.value);
-});
 
-const filterGallery = (filter) => {
-  activeFilter.value = filter;
-};
 
-const openImage = (index) => {
-  currentImage.value = index;
-  isModalOpen.value = true;
-};
+const serviceimg = ref([
+      {
+        id: 1,
+        src: 'https://uic.group/media/cache/b3/6b/b36bc02390ec157e4a4a99eb5c0643b2.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Anatomica",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+      {
+        id: 2,
+        src: 'https://uic.group/media/cache/cc/39/cc392cc7e6083d974df22bdf3f7baae3.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Uzbekistan's club App",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+      {
+        id: 3,
+        src: 'https://uic.group/media/cache/30/da/30da918dacc113dd034fb5dbb8063282.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Ricomel",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+      {
+        id: 4,
+        src: 'https://uic.group/media/cache/d4/e7/d4e7073d362f8d5a16efbb3e656fc4ee.jpg',
+        category: 'Bollywood',
+        title1: "theBEVERLY",
+        titleabs: "Infomax freight",
+        mintitle1: "Salt Lake City",
+        title2: "Now Leasing",
+        mintitle2: "Apartments / Starting From — $1,675+ Monthly",
+      },
+    ],
+);
 
-const closeModal = () => {
-  isModalOpen.value = false;
-};
+onMounted(() => {
+  AOS.init ({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+  })
+})
 
-const nextImage = () => {
-  currentImage.value = (currentImage.value + 1) % images.value.length;
-};
 
-const prevImage = () => {
-  currentImage.value = (currentImage.value - 1 + images.value.length) % images.value.length;
-};
 </script>
 
-<style scoped>
-a {
-  text-decoration: none;
+<style lang="scss" scoped>
+.bg{
+  background: #0c0c0c;
+  //background-color: black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+
+
+.photos-grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
+
+  @media (max-width: 580px) {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    //border: 1px solid #ffffff;
+    position: relative;
+  }
+
+  .img-box img{
+    width: 370px;
+    height: 220px;
+  }
+
+
+
+  .img-box:hover .caption {
+    transform: translateY(-5px);
+  }
+
+  img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    filter: brightness(60%);
+  }
+
+  .uzb_img img{
+    width: 700px;
+    height: 457px;
+  }
+
+  .caption {
+    color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-size: 1.5rem;
+  }
+
+  .transparent-box {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-photo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5em;
+
+    &:nth-child(0) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &:nth-child(1) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    &:nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &:nth-child(3) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+}
+
+
+.hide-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background:
+      linear-gradient(160deg, rgba(45, 184, 147, 0.64), rgba(45, 184, 147, 0.20), rgba(67, 67, 67, 0.10), rgba(45, 184, 147, 0.94),);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  border-radius: 12px;
   cursor: pointer;
-  outline: 0;
 }
 
-.section-padding {
-  padding-top: 80px;
-}
-
-.gallery-section {
+.item {
   position: relative;
-  z-index: 1;
+  overflow: hidden;
+
 }
 
-.title {
-  font-size: 46px;
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-  color: #f44336;
+.item:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  width: 100%;
 }
+
+.top-overlay {
+  bottom: 100%;
+  height: 0;
+}
+.item:hover .top-overlay {
+  bottom: 0;
+}
+.bottom-overlay {
+  top: 100%;
+}
+
+.item:hover .bottom-overlay {
+  top: 0;
+}
+
+.right-overlay {
+  left: 100%;
+  height: 100%;
+}
+
+.item:hover .right-overlay {
+  left : 0;
+}
+
+.left-overlay {
+  right: 100%;
+  height: 100%;
+  left:auto;
+}
+
+.item:hover .left-overlay {
+  right : 0;
+}
+.fade-overlay {
+  height: 100%;
+  opacity: 0;
+}
+
+.item:hover .fade-overlay {
+  opacity: 1;
+}
+.title-overlay {
+  height: auto;
+  top: auto;
+  opacity: 0;
+}
+.item:hover .title-overlay {
+  opacity: 1;
+  height: auto;
+  padding: 50px 0;
+}
+.text {
+  color: white;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 90%;
+  left: 77%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 700;
+}
+.text2 {
+  color: white;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 700;
+}
+
+
 
 .filter {
   text-align: center;
   max-width: 1050px;
-  margin: auto;
+}
+
+text_h3{
+  margin-bottom: 80px;
 }
 
 .btn {
   padding: 10px 20px;
-  margin: 5px 4px 4px 0;
+  margin: 7px 6px 6px 0;
   display: inline-block;
-  color: #003;
-  background: #eee;
-  border: 1px solid #f44336;
+  color: #c5bebe;
+  background: transparent;
+  border: 2px solid #636060;
   transition: all 0.4s;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
 }
 .btn:hover, .btn-active {
-  background: #f44336;
-  color: #fff;
+  border: 2px solid #00a795;
+  color: #00a795;
   transform: translateY(3px);
 }
 
-.gallery {
+
+$button-transition-timing: 100ms;
+.button-group {
   display: flex;
-  justify-content: center;
-  width: fit-content;
-  max-width: 1320px;
-  flex-wrap: wrap;
-  margin: 25px auto;
+  gap: 10px;
+  position: relative;
+  z-index: 999;
+  margin-bottom: 40px;
 }
-.gallery a {
-  display: flex;
-}
-.gallery img {
-  width: 200px;
-  height: 220px;
-  object-fit: cover;
-  transition: 0.3s ease-in-out;
+
+.button {
   border-radius: 12px;
-  overflow: hidden;
-  margin: 10px 10px;
-}
+  color: #333;
+  font-weight: bold;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: all $button-transition-timing ease-in-out;
 
-.gallery img:hover {
-  transform: scale(1.1);
-}
-
-.sets .hide,
-.sets .pophide {
-  width: 0%;
-  opacity: 0;
-}
-
-React Vue Nuxt TypeScript Js, [6/8/2024 11:01 AM]
-.closeBtn {
-  position: absolute;
-  font-size: 22px;
-  font-weight: 500;
-  right: 25px;
-  top: 25px;
-  color: white;
-  transition: 0.5s linear;
-  padding: 8px 40px;
-  border-radius: 25px;
-  background: red;
-  outline-offset: -6px;
-  outline: 2px solid #fff;
-}
-.closeBtn:hover {
-  cursor: pointer;
-  background: white;
-  color: black;
-  outline: 2px solid #000;
-}
-
-.openDiv {
-  width: 100%;
-  height: 100vh;
-  background: #000000e7;
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  z-index: 9999;
-}
-.imgPreview {
-  width: 70%;
-  object-fit: scale-down;
-  max-height: 40vw;
-  height: auto;
-}
-.prevButton,
-.nextButton {
-  transition: 1s linear;
-  padding: 10px 35px;
-  font-size: 18px;
-  border: none;
-  color: white;
-  background: #0005;
-  border-radius: 10px;
-  border: 1px solid white;
-  margin: 10px;
-}
-.prevButton:hover,
-.nextButton:hover {
-  background: #fff;
-  color: black;
-}
-
-/* responsive CSS Code */
-
-@media (max-width: 1199px) {
-  .section-padding {
-    padding-top: 70px;
+  &:hover {
+    background-color: #e6e6e6;
   }
-}
-@media (max-width: 991px) {
-  .section-padding {
-    padding-top: 50px;
+
+  &:not(:first-of-type) {
+    margin-left: 15px;
   }
-}
-@media (max-width: 767px) {
-  .title {
-    font-size: 36px;
-  }
-  .gallery img {
-    margin: 8px 8px;
-    width: 175px;
-  }
-  .closeBtn {
-    padding: 6px 25px;
-  }
-  .prevButton,
-  .nextButton {
-    font-size: 18px;
-    padding: 8px 25px;
+
+  &.bg-blue {
+    background-color: #1a8377;
+    border: 2px solid #00a795;
+    color: #fff;
+
+    &:hover {
+      background-color: #00a795;
+    }
   }
 }
 
-@media (max-width: 540px) {
-  .section-padding {
-    padding-top: 30px;
+.button-arrow {
+
+  .arrow-icon {
+    overflow: visible;
+    margin-left: 3px;
+    width: 8px;
   }
 
-  .gallery img {
-    margin: 8px 6px;
-    width: 155px;
+  .arrow-head {
+    transform: translateX(0);
+    transition: transform $button-transition-timing ease-in-out;
   }
 
-  .closeBtn {
-    font-size: 18px;
-    border-radius: 15px;
-  }
-  .prevButton,
-  .nextButton {
-    font-size: 18px;
-    padding: 6px 20px;
-    border-radius: 10px;
-    margin: 5px;
+  .arrow-body {
+    opacity: 0;
+    transform: scaleX(1);
+    transition: transform $button-transition-timing ease-in-out, opacity $button-transition-timing ease-in-out;
   }
 
-  .imgPreview {
-    width: 90%;
-    max-height: 50vh;
-    height: auto;
+  &:hover {
+    .arrow-head {
+      transform: translateX(3px);
+    }
+
+    .arrow-body {
+      opacity: 1;
+      transform: scaleX(2);
+    }
+  }
+
+}
+
+.btn__call{
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border: 2px solid #ffffff;
+  padding: 10px 30px;
+  transition-duration: 0.5s;
+
+  &:hover{
+    background-color: #00a795;
+    border: 2px solid #00a795;
+    box-shadow: 0 0 10px #00a795;
   }
 }
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+  .container {
+    margin: 10px auto;
+    width: 1300px;
+    padding-top: 80px;
+  }
+}
+
 </style>
