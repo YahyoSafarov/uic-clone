@@ -1,8 +1,8 @@
 <template>
   <div class="container py-36 mt-64">
     <div class="hero">
-      <div class="grid grid-cols-1 items-center sm:grid-cols-2 gap-8">
-        <div class="flex gap-14 items-center ml-14 justify-center">
+      <div class="grid grid-cols-1 items-center sm:grid-cols-2 gap-8 grid_media">
+        <div class="flex gap-14 items-center ml-14 justify-center media_flex">
           <swiper
               :autoplay="{
       delay: 2500,
@@ -35,7 +35,7 @@
               </div>
             </swiper-slide>
 
-            <div class="border-b-[2px] border-[#999999]"></div>
+            <div class="border-b-[2px] border-[#999999] media_border"></div>
             <div class="flex text-start items-center gap-4 mt-2">
               <p class="text-[50px] font-bold text-white">10</p>
               <p class="text-[15px] font-[600] text-[#00a795] leading-8">ANNUAL <br> QUALIFICATION TEAM</p>
@@ -48,7 +48,7 @@
       disableOnInteraction: false,
     }"
               :modules="modules"
-              class="mySwiper"
+              class="mySwiper swipe_img"
           >
             <swiper-slide>
               <div class="col-md-6 col-lg-4">
@@ -425,4 +425,47 @@ section {
   text-align: center;
 }
 
+@media(max-width: 1200px){
+  .container{
+    max-width: 1200px;
+    padding: 8px;
+  }
+  .swiper{
+
+  }
+  .grid_media{
+   display: flex;
+    flex-direction: column;
+    gap: 10px ;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 350px;
+    height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .media_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swipe_img{
+  }
+  .media_border{
+    display: none;
+  }
+}
+
+@media(max-width: 650px){
+  .media_flex{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
 </style>
+
+

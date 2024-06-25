@@ -1,6 +1,6 @@
 <template>
   <div class="container py-36">
-    <div class="bg-[#252525] p-20 w-full rounded-[12px]" data-aos="fade-up">
+    <div class="bg-[#252525] p-20 w-full rounded-[12px] media_none" data-aos="fade-up">
       <div class="flex gap-[20rem] items-center place-items-center"  data-aos-anchor-placement="center-bottom">
         <div>
           <h2 class="text-white font-bold text-[45px]">
@@ -54,5 +54,9 @@ onMounted( () => {
 </script>
 
 <style lang="scss" scoped>
-
+@media(max-width: 1200px){
+.media_none{
+  display: none;
+}
+}
 </style>

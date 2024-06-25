@@ -10,7 +10,7 @@
       </div>
 
       <div class="">
-        <div class="grid grid-cols-5 items-center gap-10" data-aos="fade-up">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 media_grid" data-aos="fade-up">
           <NuxtLink v-for="item in images" :key="item" :href="item.href" data-aos="fade-left" target="_blank"
                     class=" bg-[#141415] p-4 rounded-[10px]"
           >

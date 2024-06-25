@@ -12,14 +12,14 @@
     </div>
 
     <div class="">
-      <div class="grid grid-cols-2 gap-10 place-items-center">
+      <div class="grid grid-cols-2 gap-10 place-items-center flex_media">
         <div
             v-for="index in services"
             :key="index"
             data-aos="fade-up"
         >
         <div
-            class="bg-[#252525] flex flex-col w-full h-[180px] p-10 rounded-[12px] duration-300 hover:shadow-2xl"
+            class="bg-[#252525] flex flex-col w-full h-[180px] p-10 rounded-[12px] duration-300 hover:shadow-2xl media_text"
             data-aos="fade-right"
         >
         <h3 class="text-white font-bold text-[45px]">
@@ -98,4 +98,18 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+@media(max-width: 820px){
+  .media_text h3{
+    font-size: 25px;
+  }
+  .media_text p{
+    font-size: 15px;
+  }
+}
+@media(max-width: 692px){
+  .flex_media {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

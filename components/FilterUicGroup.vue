@@ -3,7 +3,7 @@
     <main>
       <div class="container">
 
-        <div class="flex items-center justify-between text_h3" data-aos="fade-up">
+        <div class="flex items-center justify-between media_grid text_h3" data-aos="fade-up">
           <div class="" data-aos="fade-right">
             <h3 class="text-[50px] font-bold text-white">PORTFOLIO</h3>
           </div>
@@ -292,6 +292,11 @@ h1 {
   @media (max-width: 580px) {
     grid-template-columns: 1fr;
   }
+  @media (max-width: 788px) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 
   .img-box {
     //border: 1px solid #ffffff;
@@ -313,6 +318,7 @@ h1 {
     max-width: 100%;
     display: block;
     height: auto;
+    object-fit: cover;
     filter: brightness(60%);
   }
 
@@ -401,6 +407,7 @@ h1 {
   transition: .5s ease;
   border-radius: 12px;
   cursor: pointer;
+
 }
 
 .item {
@@ -612,6 +619,8 @@ $button-transition-timing: 100ms;
     margin: 10px auto;
     width: 1300px;
     padding-top: 80px;
+  }
+  .media_grid{
   }
 }
 
