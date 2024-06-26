@@ -8,13 +8,15 @@
       </div>
 
       <div class=" flex flex-col gap-10 items-center justify-center py-10">
-        <div v-for="index in item" :key="index" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+        <div v-for="index in item" :key="index" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class=""
         >
-          <div class="flex gap-14 items-center">
-            <img :src="index.image" class="min-w-[90px] flex-center" alt="no image">
-            <p class="text-white mb-5">{{index.description}}</p>
+          <div class="flex gap-14 items-center mediaflex">
+              <img :src="index.image" class="min-w-[90px] flex-center" alt="no image">
+              <p class="text-white mb-5">{{index.description}}</p>
           </div>
-          <div class="border-b border-neutral-700 w-[920px] flex items-center justify-center ml-[122px]"></div>
+          <div class="none_media">
+            <div class="border-b border-neutral-700 w-[920px] flex items-center justify-center ml-[122px]"></div>
+          </div>
         </div>
       </div>
       <div class="wrapper flex justify-center items-center" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
@@ -137,4 +139,23 @@ a:hover:after{
   height: 140%;
 }
 
+@media(max-width: 1120px){
+  .mediaflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .none_media{
+    display: none;
+  }
+  .mediaflex p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+}
 </style>

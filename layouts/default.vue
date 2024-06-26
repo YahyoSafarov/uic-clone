@@ -33,7 +33,7 @@
     <div>
       <Navbar />
       <slot />
-<!--      <Footer />-->
+      <Footer />
     </div>
   </div>
 </template>

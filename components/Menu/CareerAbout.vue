@@ -3,7 +3,7 @@
     <div class=" flex flex-col justify-center py-6 sm:py-12">
       <div class="p-6 container mx-auto">
 
-        <div class="md:grid md:gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">
 
           <div v-for="index in item" :key="index.name" data-aos="fade-up"
           >

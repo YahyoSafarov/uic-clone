@@ -1,14 +1,14 @@
 <template>
   <div class="container">
-    <div class="border-neutral-700 bg-[#252527] rounded-[16px]"
+    <div class="border-neutral-700 bg-[#252527] rounded-[16px] bg_media"
          data-aos="fade-left"
     >
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-2 gap-4 media_grid">
        <div class="p-10">
          <h2 class="text-white font-bold text-[25px]">We are in Silicon Valley</h2>
          <p data-v-b76aee44="" class="text-[14px] text-white md:text-[16px] leading-[140%] font-medium mb-32 sm:mb-10">In order to further develop the company, enter the international arena and improve the professional skills of team members, a branch of the company was opened <span data-v-b76aee44="" class="text-[#00A795]">in San Francisco (Silicon Valley) in California</span> , USA.</p>
        </div>
-        <div class="overflow-hidden">
+        <div class="overflow-hidden img_media">
           <img src="https://cdn.commeta.uz/562x279/https://cdn.commeta.uz/media/uploaded/2023/10/12/1616653640968.jpeg" class="w-[550px] h-[348px] object-cover rounded-[16px] fiter_img absolute" alt="no image">
         </div>
       </div>
@@ -41,5 +41,20 @@ onMounted(() => {
 
 .fiter_img{
   filter: brightness(20%);
+}
+
+@media(max-width: 996px){
+  .bg_media{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("../../assets/images/uic-group-main_back.webp");
+    background-size: cover;
+    background-position: center;
+  }
+  .img_media {
+    display: none;
+  }
+  .media_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 </style>

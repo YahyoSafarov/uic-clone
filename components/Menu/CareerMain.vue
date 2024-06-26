@@ -87,4 +87,42 @@
   }
 }
 
+@media(max-width: 788px){
+  .content h2 {
+    color: #fff;
+    font-size: 7em;
+    font-weight: 800;
+    position: absolute;
+  }
+   p{
+    font-size: 50px;
+     margin-top: -35px;
+  }
+}
+@media(max-width: 520px){
+  .content h2 {
+    color: #fff;
+    font-size: 6em;
+    font-weight: 800;
+    position: absolute;
+  }
+  p{
+    font-size: 50px;
+    margin-top: -35px;
+  }
+}
+
+@media(max-width: 470px){
+  .content h2 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: 800;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+  }
+}
+
 </style>

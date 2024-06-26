@@ -8,10 +8,10 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-2 gap-7">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7">
         <div v-for="item in cloud" :key="item"
         >
-          <div class="bg-[#252527] flex items-center h-[80px] rounded-[12px]"
+          <div class="bg-[#252527] flex items-center h-[120px] rounded-[12px] md:h-[80px] lg:h-[80px]"
                data-aos="fade-up-left"
           >
             <div class="border-l-4 border-[#00A795] h-[30px] flex items-center"

@@ -323,7 +323,6 @@ body {
 .text-center { text-align: center; }
 
 .img-holder {
-    aspect-ratio: var(--width) / var(--height);
     background-color: var(--light-gray);
     overflow: hidden;
 }

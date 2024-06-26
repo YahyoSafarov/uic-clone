@@ -1,35 +1,25 @@
 <template>
-  <div class="container py-64">
-
-    <div v-if="!isLoaded" class="overlay">
-      <div class="overlayDoor"></div>
-      <div class="overlayContent">
-        <div class="loader">
-          <div class="inner"></div>
-        </div>
-        <!--        <div class="skip" @click="skipLoading">SKIP</div>-->
-      </div>
-    </div>
-
+  <div class="container py-36">
     <div data-aos="fade-up">
       <div data-aos="fade-right">
         <div class="flex items-center gap-6 ">
-          <h2 class="text-[#00a795] font-bold text-[16px]">IS THERE A PROBLEM?</h2>
+          <h2 class="text-[#00a795] font-bold text-[16px]">OUR</h2>
+          <div class="border-t-[2px] border-[#999999] w-[30px]"></div>
         </div>
-        <h2 class="text-white font-bold text-[45px] mb-10">What solution do you want?</h2>
+        <h2 class="text-white font-bold text-[45px] mb-10">Services</h2>
       </div>
 
     </div>
 
     <div class="">
-      <div class="grid grid-cols-2 gap-10 place-items-center">
+      <div class="grid grid-cols-2 gap-10 place-items-center flex_media">
         <div
             v-for="index in services"
             :key="index"
             data-aos="fade-up"
         >
           <div
-              class="bg-[#252525] flex flex-col w-full h-[180px] p-10 rounded-[12px] duration-300 hover:shadow-2xl"
+              class="bg-[#252525] flex flex-col w-full h-[180px] p-10 rounded-[12px] duration-300 hover:shadow-2xl media_text"
               data-aos="fade-right"
           >
             <h3 class="text-white font-bold text-[45px]">
@@ -105,12 +95,21 @@ onMounted(() => {
     once: true, // Whether animation should happen only once
   });
 });
-
-
 </script>
 
 <style lang="scss" scoped>
-.container{
-  max-width: 1310px;
+@media(max-width: 820px){
+  .media_text h3{
+    font-size: 25px;
+  }
+  .media_text p{
+    font-size: 15px;
+  }
+}
+@media(max-width: 692px){
+  .flex_media {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

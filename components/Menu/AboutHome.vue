@@ -11,8 +11,10 @@
           >
             <div class="flex flex-col items-start justify-start text-start mt-20">
               <h2 class="text-white text-[25px] font-bold">{{item.name}}</h2>
-              <p class="text-white mb-10">{{item.title}}</p>
-              <p class="text-white ">{{item.title2}}</p>
+              <div class="flex flex-col gap-10 text-[15px]">
+                <p class="text-white">{{item.title}}</p>
+                <p class="text-white">{{item.title2}}</p>
+              </div>
             </div>
           </div>
         </div>

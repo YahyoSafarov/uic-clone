@@ -12,7 +12,7 @@
         <nav class="navbar" :class="{ active: isNavbarActive }" ref="navbar">
 
           <button class="nav-close-btn" aria-label="close menu" @click="toggleNavbar">
-            <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+            <ion-icon name="close-sharp" aria-hidden="true"><img src="../assets/images/close-large-line.png" alt="no icon"></ion-icon>
           </button>
 
           <ul class="navbar-list ">
@@ -21,6 +21,7 @@
             <li><NuxtLink to="/portfolio" class="navbar-link" @click="closeNavbar">Portfolio</NuxtLink></li>
             <li><NuxtLink to="/career" class="navbar-link" @click="closeNavbar">Career</NuxtLink></li>
             <li><NuxtLink to="/blog" class="navbar-link" @click="closeNavbar">Blog</NuxtLink></li>
+<!--            <li><NuxtLink to="/language" class="navbar-link" @click="closeNavbar">Language</NuxtLink></li>-->
             <li><a href="#" class="navbar_contact flex gap-4 items-center font-bold text-[25px]" @click="closeNavbar">
               <div class="group flex items-center gap-4">
                 <h4 class="text-[#c5bebe] duration-150 group-hover:text-white">+998 71</h4>
@@ -127,25 +128,25 @@ onUnmounted(() => {
   font-weight: var(--fw-900);
   display: flex;
   align-items: center;
-  margin-inline-start: -8px;
+  margin-inline-start: -65px;
 }
 
 .logo ion-icon {
   color: var(--coquelicot);
   font-size: 40px;
-  transform: rotate(90deg) translate(-2px, -5px);
+  //transform: rotate(90deg) translate(-2px, -5px);
 }
 
 .nav-open-btn {
-  background-color: var(--coquelicot);
-  padding: 20px 15px;
+  background-color: #00a795;
+  padding: 15px 10px;
   border-radius: var(--radius-8);
 }
 
 .nav-open-btn .line {
   background-color: var(--white);
-  width: 30px;
-  height: 3px;
+  width: 20px;
+  height: 1.7px;
 }
 
 .nav-open-btn .line:not(:last-child) { margin-block-end: 6px; }
@@ -156,14 +157,15 @@ onUnmounted(() => {
 }
 
 .navbar {
-  background-color: var(--coquelicot);
-  color: gray;
+  background-color: #1a8377;
+  color: white;
   position: fixed;
   top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
   display: grid;
+
   place-content: center;
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
@@ -193,7 +195,7 @@ onUnmounted(() => {
   padding-block: 10px;
   margin-block-end: 20px;
   transition: var(--transition-1);
-  color: gray;
+  color: white;
 }
 
 .navbar-link:is(:hover, :focus, .active) { color: var(--rich-black-fogra-29-1); }
@@ -468,7 +470,7 @@ onUnmounted(() => {
   .header .navbar-link:is(:hover, :focus, .active) { color: white; }
 
   .header.active .btn {
-    background-color: var(--coquelicot);
+    background-color: #00a795;
     color: var(--white);
   }
 

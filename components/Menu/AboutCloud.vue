@@ -8,7 +8,7 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-3 gap-7">
+      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3 gap-7">
         <div v-for="item in cloud" :key="item"
         >
           <div class="bg-[#252527] flex items-center h-[100px] rounded-[12px]"
@@ -17,7 +17,7 @@
             <div class="border-l-4 border-[#555] h-[50px] flex items-center"
             >
               <div class="p-10">
-                <p class="text-white text-[18px]">{{item.text}}</p>
+                <p class="text-white text-[15px] md:text-[16px] lg:text-[18px]">{{item.text}}</p>
               </div>
             </div>
           </div>

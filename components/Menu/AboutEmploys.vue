@@ -6,7 +6,7 @@
           At the moment, the company employs more than 100 employees, in such areas as:
         </h3>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div v-for="item in text" :href="item.href" :key="item"
         >
           <div class="flex border-[1px] border-[#FFFFFF33] group hover:bg-[#242426] rounded-[12px] cursor-pointer"

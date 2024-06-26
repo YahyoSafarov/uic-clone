@@ -307,7 +307,8 @@ $button-transition-timing: 100ms;
   }
   .media_text{
     display: flex;
-    margin-top: -50px;
+    flex-direction: column;
+    margin-top: -100px;
     align-items: center;
     justify-content: center;
   }

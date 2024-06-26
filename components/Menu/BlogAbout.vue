@@ -3,14 +3,14 @@
     <div class="container mt-40">
 
 
-      <div class="content">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 items-center">
           <div
               v-for="(image, index) in paginatedItems"
               :key="index"
               class="image-container"
           >
               <section class="h-full-0" data-aos="fade-up">
-                <div class="grid grid-cols-2 gap-[5rem] bg-[#222222] cursor-pointer group-hover:" data-aos="zoom-in-right">
+                <div class="flex flex-col bg-[#222222] md:grid-cols-2 lg:grid grid-cols-2 gap-[5rem]" data-aos="zoom-in-right">
                   <!-- Blog post -->
 
                   <article class="">
@@ -216,6 +216,10 @@ max-width: 1320px;
     align-items: center;
     justify-content: center;
     gap: 5rem;
+
+    @media(max-width: 1200px){
+
+    }
 
     .image-container {
 

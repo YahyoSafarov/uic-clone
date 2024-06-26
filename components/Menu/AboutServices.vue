@@ -6,7 +6,7 @@
       </h3>
     </div>
 
-    <div class="grid grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10">
       <div v-for="item in services" :key="item"
       >
         <NuxtLink to="">

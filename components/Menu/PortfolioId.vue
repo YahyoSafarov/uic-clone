@@ -176,4 +176,10 @@ $button-transition-timing: 100ms;
   }
 }
 
+@media(max-width: 1200px){
+  .bg_shadow{
+    display: none;
+  }
+}
+
 </style>

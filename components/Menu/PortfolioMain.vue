@@ -29,7 +29,7 @@
         </ul>
 
         <div id="gallery" data-aos="fade-up">
-          <div class="grid grid-cols-3 gap-10 items-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center">
             <div
                 v-for="item in filteredItems"
                 :key="item.id"
@@ -70,70 +70,70 @@ const galleryItems = ref([
     client: 'https://remixicon.com/icon/arrow-right-line',
     type: 'Logo',
     category: 'print',
-    image: 'https://uic.group/media/cache/0c/39/0c392b9a99ead3fb208087f2a1e1e145.jpg'
+    image: 'https://uic.group/media/cache/0c/39/0c392b9a99ead3fb208087f2a1e1e145.jpg',
   },
   {
-    id: 2, client: 'Client Name',
-
+    id: 2,
+    client: 'Client Name',
     type: 'Logo',
     category: 'Web',
-    image: 'https://uic.group/media/cache/29/88/29883e26588ac429b3ca86b3ac39efa6.jpg'
+    image: 'https://uic.group/media/cache/29/88/29883e26588ac429b3ca86b3ac39efa6.jpg',
   },
   {
     id: 3,
     client: 'Client Name',
     type: 'Web',
     category: 'web',
-    image: 'https://uic.group/media/cache/cc/39/cc392cc7e6083d974df22bdf3f7baae3.jpg'
+    image: 'https://uic.group/media/cache/cc/39/cc392cc7e6083d974df22bdf3f7baae3.jpg',
   },
   {
     id: 4,
     client: 'Client Name',
     type: 'Print',
     category: 'print',
-    image: 'https://uic.group/media/cache/59/f1/59f1ca58bab7263f9c5eaff3033d5951.jpg'
+    image: 'https://uic.group/media/cache/59/f1/59f1ca58bab7263f9c5eaff3033d5951.jpg',
   },
   {
     id: 5,
     client: 'Client Name',
     type: 'Strategy',
     category: 'strategy',
-    image: 'https://uic.group/media/cache/b6/27/b6273a3cbd3fe1e5ad0e9b9acdccdfc4.jpg'
+    image: 'https://uic.group/media/cache/b6/27/b6273a3cbd3fe1e5ad0e9b9acdccdfc4.jpg',
   },
   {
     id: 6,
     client: 'Client Name',
     type: 'Strategy. Web. Print.',
     category: 'strategy web print',
-    image: 'https://uic.group/media/cache/77/4d/774ddc33fda844b44bb597539531dec6.jpg'
+    image: 'https://uic.group/media/cache/77/4d/774ddc33fda844b44bb597539531dec6.jpg',
   },
   {
     id: 7,
     client: 'Client Name',
     type: 'Web',
     category: 'web',
-    image: 'https://uic.group/media/cache/b3/6b/b36bc02390ec157e4a4a99eb5c0643b2.jpg'
+    image: 'https://uic.group/media/cache/b3/6b/b36bc02390ec157e4a4a99eb5c0643b2.jpg',
   },
   {
     id: 8,
     client: 'Client Name',
     type: 'Strategy',
     category: 'strategy',
-    image: 'https://uic.group/media/cache/cc/39/cc392cc7e6083d974df22bdf3f7baae3.jpg'
+    image: 'https://uic.group/media/cache/cc/39/cc392cc7e6083d974df22bdf3f7baae3.jpg',
   },
   {
     id: 9,
     client: 'Client Name',
     type: 'Strategy. Web.',
     category: 'web strategy',
-    image: 'https://uic.group/media/cache/30/da/30da918dacc113dd034fb5dbb8063282.jpg'
+    image: 'https://uic.group/media/cache/30/da/30da918dacc113dd034fb5dbb8063282.jpg',
   },
   {
     id: 10,
     client: 'Client Name',
     type: 'Strategy. Web.',
     category: 'web strategy',
-    image: 'https://uic.group/media/cache/d4/e7/d4e7073d362f8d5a16efbb3e656fc4ee.jpg'
+    image: 'https://uic.group/media/cache/d4/e7/d4e7073d362f8d5a16efbb3e656fc4ee.jpg',
   },
   {
     id: 11,
@@ -467,6 +467,13 @@ h1 {
   .gallery-item {
     float: none;
     width: 100%;
+  }
+}
+
+@media(max-width: 656px){
+  #filters{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>
