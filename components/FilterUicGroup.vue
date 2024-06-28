@@ -2,10 +2,9 @@
   <div class="bg-[#000] mt-64">
     <main>
       <div class="container">
-
-        <div class="flex items-center justify-between media_grid text_h3" data-aos="fade-up">
-          <div class="" data-aos="fade-right">
-            <h3 class="text-[50px] font-bold text-white">PORTFOLIO</h3>
+        <div class="flex items-center justify-between md:flex lg:flex" data-aos="fade-up">
+          <div class="media_title" data-aos="fade-right">
+            <h3 class="text-[25px] font-bold text-white md:text-[35px] lg:text-[50px]">PORTFOLIO</h3>
           </div>
           <div id="btncontainer" class="filter">
             <button :class="{ 'btn-active': activeFilter === 'all' }" class="btn" @click="filterGallery('all')">
@@ -621,6 +620,15 @@ $button-transition-timing: 100ms;
     padding-top: 80px;
   }
   .media_grid{
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .media_title{
+    font-size: 20px;
+  }
+  .media_title h3{
+
   }
 }
 

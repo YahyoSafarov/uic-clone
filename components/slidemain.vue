@@ -463,6 +463,7 @@ section {
     align-items: start;
     flex-direction: column;
     justify-content: start;
+    //display: none;
   }
 }
 
