@@ -54,8 +54,8 @@
             </div>
           </div>
 
-          <div class="">
-            <img src="https://uic.group/uic-images/mountain.webp" class="absolute  top-[180px] -ml-[102px] f_image"  alt="no image">
+          <div class="flex justify-center items-center">
+            <img src="https://uic.group/uic-images/mountain.webp" class="absolute max-w-full w-[100%] top-[180px] f_image"  alt="no image">
           </div>
 
         </div>

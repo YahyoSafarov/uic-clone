@@ -47,7 +47,7 @@
 
     </div>
 
-    <div class="border-b-[2px] border-[#666] mt-14"></div>
+    <div class="border-b-[2px] border-[#333] mt-14"></div>
 
     <div>
       <div data-v-34700754="" class="mt-[18px] flex flex-col-reverse h-auto md:flex-row items-center md:justify-between">
