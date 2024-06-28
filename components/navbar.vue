@@ -21,7 +21,7 @@
             <li><NuxtLink to="/portfolio" class="navbar-link" @click="closeNavbar">Portfolio</NuxtLink></li>
             <li><NuxtLink to="/career" class="navbar-link" @click="closeNavbar">Career</NuxtLink></li>
             <li><NuxtLink to="/blog" class="navbar-link" @click="closeNavbar">Blog</NuxtLink></li>
-            <li><NuxtLink to="/language" class="navbar-link" @click="closeNavbar">Language</NuxtLink></li>
+<!--            <li><NuxtLink to="/language" class="navbar-link" @click="closeNavbar">Language</NuxtLink></li>-->
             <li><a href="#" class="navbar_contact flex gap-4 items-center font-bold text-[25px]" @click="closeNavbar">
               <div class="group flex items-center gap-4">
                 <h4 class="text-[#c5bebe] duration-150 group-hover:text-white">+998 71</h4>
