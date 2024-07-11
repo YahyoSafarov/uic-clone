@@ -3,23 +3,26 @@
     <div class="py-24">
       <div class="logos bg-[#262727] rounded-[12px]">
         <swiper
-            :slidesPerView="3.5"
-            :autoplay="{
-          delay: 2500,
-          disableOnInteraction: false,
+          :slidesPerView="3.5"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
           }"
-            :scrollbar="{
-              hide: true,
-              bacground: '#fff',
-            }"
-            :spaceBetween="25"
-            :modules="modules"
-            class="mySwiper cursor-pointer"
+          :scrollbar="{
+            hide: true,
+            bacground: '#fff',
+          }"
+          :spaceBetween="25"
+          :modules="modules"
+          class="mySwiper cursor-pointer"
         >
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda7.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
@@ -29,7 +32,10 @@
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda4.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda2.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
@@ -39,80 +45,86 @@
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda2.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda5.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
 
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda5.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda6.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda4.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda5.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda6.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda3.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/uic-images/image/sarkarda/sarkarda7.png" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fsarkarda%2Fsarkarda7.webp&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
         </swiper>
       </div>
     </div>
   </div>
-
 </template>
 <script>
-
-
 // Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import {Scrollbar, Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Scrollbar, Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default {
   components: {
@@ -121,18 +133,17 @@ export default {
   },
   setup() {
     return {
-      modules: [ Scrollbar, Autoplay, Pagination, Navigation],
+      modules: [Scrollbar, Autoplay, Pagination, Navigation],
     };
   },
 };
 </script>
 
-
 <style scoped>
-.container{
+.container {
   max-width: 1170px;
 }
-.mySwiper{
+.mySwiper {
   padding: 25px;
   border-radius: 15px;
   color: white;
@@ -150,8 +161,6 @@ export default {
   width: 100%;
   height: 100%;
 }
-
-
 
 .swiper-slide {
   text-align: center;
@@ -176,7 +185,7 @@ export default {
   margin-right: auto;
 }
 
-.swiper-scrollbar-drag{
+.swiper-scrollbar-drag {
   height: 100%;
   width: 100%;
   position: relative;
@@ -185,7 +194,6 @@ export default {
   left: 0;
   top: 0;
 }
-
 
 .overlay {
   position: absolute;
@@ -197,7 +205,7 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 16px;
 }
 
@@ -234,17 +242,17 @@ export default {
 }
 
 .item:hover .right-overlay {
-  left : 0;
+  left: 0;
 }
 
 .left-overlay {
   right: 100%;
   height: 100%;
-  left:auto;
+  left: auto;
 }
 
 .item:hover .left-overlay {
-  right : 0;
+  right: 0;
 }
 .fade-overlay {
   height: 100%;
@@ -276,8 +284,6 @@ export default {
   text-align: center;
 }
 
-
-
 mySwiper.swiper-scrollbar-drag {
   height: 100%;
   width: 100%;
@@ -288,5 +294,3 @@ mySwiper.swiper-scrollbar-drag {
   top: 0;
 }
 </style>
-
-

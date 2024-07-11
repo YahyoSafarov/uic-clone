@@ -3,7 +3,7 @@
     <div class="hero">
       <div class="container" data-aos="fade-up">
         <div class="flex items-center justify-center mt-32" data-aos="zoom-in">
-          <img src="https://uic.group/uic-images/about/about-uic-logo.png" class="w-full max-w-[650px]" alt="no image">
+          <img src="https://uic.group/images/about/about-uic-logo.webp" class="w-full max-w-[650px]" alt="no image">
         </div>
 
         <div>

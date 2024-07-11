@@ -5,24 +5,27 @@
         <div class="p-12">
           <h1 class="text-white text-[25px] font-bold">The Co-learning Center is a friend of UIC</h1>
         </div>
-        <swiper
-            :slidesPerView="3.5"
-            :autoplay="{
-          delay: 2500,
-          disableOnInteraction: false,
+  <swiper
+          :slidesPerView="3.5"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
           }"
-            :scrollbar="{
-              hide: true,
-              bacground: '#fff',
-            }"
-            :spaceBetween="25"
-            :modules="modules"
-            class="mySwiper cursor-pointer"
+          :scrollbar="{
+            hide: true,
+            bacground: '#fff',
+          }"
+          :spaceBetween="25"
+          :modules="modules"
+          class="mySwiper cursor-pointer"
         >
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter1.ffdd962a.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter4.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
@@ -32,7 +35,10 @@
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter7.5480cf52.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter3.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
@@ -42,69 +48,81 @@
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter2.967d5c4f.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter2.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
 
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter6.aee5389c.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter5.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter4.10fb5d27.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter4.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter5.66af7fc7.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter3.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter3.da41edb3.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter2.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter8.ad6b4d50.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter3.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
         </swiper>
       </div>

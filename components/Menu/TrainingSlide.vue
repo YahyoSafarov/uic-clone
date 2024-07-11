@@ -3,29 +3,38 @@
     <div class="">
       <div class="logos bg-[#262727] rounded-[12px]">
         <div class="p-12">
-          <h1 class="text-white text-[25px] font-bold">Training Center under the UIC</h1>
+          <h1 class="text-white text-[25px] font-bold">
+            Training Center under the UIC
+          </h1>
           <p class="text-white text-[15px] mt-5">
-            From the very foundation of the company, the team created a unique internship system, which later grew into the UIC Training Center. Today, more than 25 junior specialists are studying in this center. A feature of the UIC Training Center is the training of interns on real projects and in working conditions
+            From the very foundation of the company, the team created a unique
+            internship system, which later grew into the UIC Training Center.
+            Today, more than 25 junior specialists are studying in this center.
+            A feature of the UIC Training Center is the training of interns on
+            real projects and in working conditions
           </p>
         </div>
         <swiper
-            :slidesPerView="3.5"
-            :autoplay="{
-          delay: 2500,
-          disableOnInteraction: false,
+          :slidesPerView="3.5"
+          :autoplay="{
+            delay: 2500,
+            disableOnInteraction: false,
           }"
-            :scrollbar="{
-              hide: true,
-              bacground: '#fff',
-            }"
-            :spaceBetween="25"
-            :modules="modules"
-            class="mySwiper cursor-pointer"
+          :scrollbar="{
+            hide: true,
+            bacground: '#fff',
+          }"
+          :spaceBetween="25"
+          :modules="modules"
+          class="mySwiper cursor-pointer"
         >
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter1.ffdd962a.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter4.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
@@ -35,7 +44,10 @@
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter7.5480cf52.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter3.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
@@ -45,98 +57,110 @@
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter2.967d5c4f.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter2.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
 
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter6.aee5389c.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter5.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter4.10fb5d27.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter4.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter5.66af7fc7.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter3.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter3.da41edb3.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter2.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
           <swiper-slide>
             <div class="col-md-6 col-lg-4">
               <div class="item animated wow fadeIn">
-                <img src="https://uic.group/assets/senter8.ad6b4d50.jpg" alt="no image">
+                <img
+                  src="https://uic.group/_next/image?url=%2Fimages%2Fclc-tb%2Fsenter3.jpg&w=1080&q=75"
+                  alt="no image"
+                />
                 <div class="overlay fade-overlay">
                   <!--                  <div class="text">Fade in overlay</div>-->
                 </div>
               </div>
             </div>
-
           </swiper-slide>
         </swiper>
       </div>
-
     </div>
 
     <div class="py-24">
       <p class="text-white">
-        Since the beginning of its activity, the company has been a partner of the Co-Learning Center , which in turn provides free IT education. The center is focused on teaching students in the following areas: Advanced Front-end, Basic Front-end, Python Back-end, Back-end, UX / UI, Game Dev, Digital Marketing and Mobile Development, as well as the basics of Project Management.
+        Since the beginning of its activity, the company has been a partner of
+        the Co-Learning Center , which in turn provides free IT education. The
+        center is focused on teaching students in the following areas: Advanced
+        Front-end, Basic Front-end, Python Back-end, Back-end, UX / UI, Game
+        Dev, Digital Marketing and Mobile Development, as well as the basics of
+        Project Management.
       </p>
     </div>
   </div>
-
 </template>
 <script>
-
-
 // Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import {Scrollbar, Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Scrollbar, Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default {
   components: {
@@ -145,18 +169,17 @@ export default {
   },
   setup() {
     return {
-      modules: [ Scrollbar, Autoplay, Pagination, Navigation],
+      modules: [Scrollbar, Autoplay, Pagination, Navigation],
     };
   },
 };
 </script>
 
-
 <style scoped>
-.container{
+.container {
   max-width: 1170px;
 }
-.mySwiper{
+.mySwiper {
   padding: 25px;
   border-radius: 15px;
   color: white;
@@ -174,8 +197,6 @@ export default {
   width: 100%;
   height: 100%;
 }
-
-
 
 .swiper-slide {
   text-align: center;
@@ -200,7 +221,7 @@ export default {
   margin-right: auto;
 }
 
-.swiper-scrollbar-drag{
+.swiper-scrollbar-drag {
   height: 100%;
   width: 100%;
   position: relative;
@@ -209,7 +230,6 @@ export default {
   left: 0;
   top: 0;
 }
-
 
 .overlay {
   position: absolute;
@@ -221,7 +241,7 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   border-radius: 12px;
 }
 
@@ -258,17 +278,17 @@ export default {
 }
 
 .item:hover .right-overlay {
-  left : 0;
+  left: 0;
 }
 
 .left-overlay {
   right: 100%;
   height: 100%;
-  left:auto;
+  left: auto;
 }
 
 .item:hover .left-overlay {
-  right : 0;
+  right: 0;
 }
 .fade-overlay {
   height: 100%;
@@ -300,8 +320,6 @@ export default {
   text-align: center;
 }
 
-
-
 mySwiper.swiper-scrollbar-drag {
   height: 100%;
   width: 100%;
@@ -312,7 +330,3 @@ mySwiper.swiper-scrollbar-drag {
   top: 0;
 }
 </style>
-
-
-
-
